@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6314B2FA-EFF0-40E2-AB27-00771F3E3BC7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MongocinDesktop</RootNamespace>
+    <AssemblyName>MongocinDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Json.Net, Version=1.0.18.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Json.Net.1.0.18\lib\netstandard2.0\Json.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddAllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddAllProducts.Designer.cs">
+      <DependentUpon>AddAllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllProducts.Designer.cs">
+      <DependentUpon>AllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditAllProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditAllProducts.Designer.cs">
+      <DependentUpon>EditAllProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditOrder.Designer.cs">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProducts.Designer.cs">
+      <DependentUpon>EditProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditShop.Designer.cs">
+      <DependentUpon>EditShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditWarehouse.Designer.cs">
+      <DependentUpon>EditWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HandleTransferRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HandleTransferRequest.Designer.cs">
+      <DependentUpon>HandleTransferRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Receipts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receipts.Designer.cs">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReceiptsAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReceiptsAddProduct.Designer.cs">
+      <DependentUpon>ReceiptsAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReceiptsViewProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReceiptsViewProducts.Designer.cs">
+      <DependentUpon>ReceiptsViewProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShopProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopProducts.Designer.cs">
+      <DependentUpon>ShopProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShopRecept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopRecept.Designer.cs">
+      <DependentUpon>ShopRecept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TransferRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TransferRequest.Designer.cs">
+      <DependentUpon>TransferRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewTransferRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewTransferRequest.Designer.cs">
+      <DependentUpon>ViewTransferRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Abstract\Bill.cs" />
+    <Compile Include="Models\Abstract\Storehouse.cs" />
+    <Compile Include="Models\Enum\StateEnum.cs" />
+    <Compile Include="Models\Interfaces\IStatefull.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\ProductListElement.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Receipt.cs" />
+    <Compile Include="Models\Shop.cs" />
+    <Compile Include="Models\TransferRequest.cs" />
+    <Compile Include="Models\Warehouse.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddAllProducts.resx">
+      <DependentUpon>AddAllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllProducts.resx">
+      <DependentUpon>AllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditAllProducts.resx">
+      <DependentUpon>EditAllProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditOrder.resx">
+      <DependentUpon>EditOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProducts.resx">
+      <DependentUpon>EditProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditShop.resx">
+      <DependentUpon>EditShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditWarehouse.resx">
+      <DependentUpon>EditWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HandleTransferRequest.resx">
+      <DependentUpon>HandleTransferRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receipts.resx">
+      <DependentUpon>Receipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReceiptsAddProduct.resx">
+      <DependentUpon>ReceiptsAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReceiptsViewProducts.resx">
+      <DependentUpon>ReceiptsViewProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopProducts.resx">
+      <DependentUpon>ShopProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopRecept.resx">
+      <DependentUpon>ShopRecept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TransferRequest.resx">
+      <DependentUpon>TransferRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewTransferRequest.resx">
+      <DependentUpon>ViewTransferRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
